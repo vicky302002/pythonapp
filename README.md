@@ -17,3 +17,9 @@ python3 app.py
 Add port no 5000 in security group .
 
 http://ec2-public-ip:5000
+
+---------------------------------------------------------------------
+sudo su
+docker build -t myimg .
+docker run -d -p5000:5000 --name myflaskcontainer myimg 
+
